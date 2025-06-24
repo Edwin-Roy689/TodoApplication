@@ -1,5 +1,6 @@
 let todos = [];
 
+// eslint-disable-next-line no-unused-vars
 function addTodo() {
   const input = document.getElementById("todo-input");
   if (input.value.trim() !== "") {
@@ -12,7 +13,7 @@ function addTodo() {
 function renderTodos() {
   const list = document.getElementById("todo-list");
   list.innerHTML = "";
-  todos.forEach((todo, index) => {
+  todos.forEach((todo) => {
     const listItem = document.createElement("li");
     listItem.textContent = todo;
     list.appendChild(listItem);
